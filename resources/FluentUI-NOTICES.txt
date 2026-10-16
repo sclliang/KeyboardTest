@@ -1,0 +1,273 @@
+# Third-party notices
+
+The native TimePlot/RealTimePlot examples follow the demo settings and interactions
+in zhuzichu520/FluentUI. Their rendering, data storage and input handling are
+implemented in this SDK; Qt and QCustomPlot are not linked or redistributed as
+part of the native SDK or Gallery.
+
+The native C++/Direct2D implementation reproduces the behavior and appearance of
+[zhuzichu520/FluentUI](https://github.com/zhuzichu520/FluentUI), reference commit
+`7e33a2f672d18239ef49ab960075b1137a1d18e7`. Ported style definitions retain the
+repository's MIT notice below. Reused assets can carry their own notices and terms,
+including the Microsoft font listed separately here. Qt is not linked into this library.
+Additional third-party assets and libraries will be recorded here when incorporated.
+
+## zhuzichu520/FluentUI
+
+The native Squircle shader ports the fixed example's `OpenGLItem.cpp` fragment
+formula and framebuffer blend. Its Gallery loop follows `T_OpenGL.qml`.
+These definitions retain the MIT notice below. The separate Qt source observer
+is diagnostic tooling and is not linked into the distributed native SDK.
+
+The Gallery translation catalog is generated from the pinned example's
+`example/example_zh_CN.ts`. It retains 542 active, nonempty context-specific
+translations, excluding obsolete entries. The source hash and generation method
+are recorded in `examples/resources/translations`. This data uses the repository
+MIT notice below and is embedded only in the Gallery example, not the SDK library.
+
+MIT License
+
+Copyright (c) 2023 zhuzichu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## T_Clip avatar and banner assets
+
+Source: `zhuzichu520/FluentUI`, fixed commit
+`7e33a2f672d18239ef49ab960075b1137a1d18e7`, files
+`example/res/svg/avatar_1.svg` through `avatar_4.svg` and
+`example/res/image/banner_1.jpg`. The Gallery embeds twelve direct rasterizations
+of those SVGs at 50/75/100 pixels and the unchanged original JPEG. Original source
+bytes and the upstream repository notice are retained under
+`examples/resources/shapes/source`; per-source/output SHA-256 records are in
+`examples/resources/shapes/source-manifest.json` and `banner-source.json`.
+The optional static Qt 6.8.4 conversion tool is used offline only; no Qt library
+or plugin is part of the native Gallery or SDK. This provenance record does not
+replace any separate notices carried by the original assets.
+
+## FluentIcons.ttf / Segoe Fluent Icons
+
+Source: `zhuzichu520/FluentUI`,
+`src/Qt6/imports/FluentUI/Font/FluentIcons.ttf`.
+This 408,752-byte font is retained without modification and embedded in the native
+static library. SHA-256:
+`82f5dc0e0cb9f41efad49e5423c76768ae0fc96e062a0893b6c729b863033013`.
+
+The font's embedded `name` table identifies the family as `Segoe Fluent Icons` and
+the manufacturer as `Microsoft Corporation`. Its copyright notice is:
+
+© 2021 Microsoft Corporation. All Rights Reserved.
+
+Embedded license description, name ID 13, verbatim:
+
+Microsoft supplied font. You may use this font to create, display, and print content as permitted by the license terms or terms of use, of the Microsoft product, service, or content in which this font was included. You may only (i) embed this font in content as permitted by the embedding restrictions included in this font; and (ii) temporarily download this font to a printer or other output device to help print content. Any other use is prohibited.
+
+Embedded license URL, name ID 14, verbatim:
+`http://www.microsoft.com/typography/fonts/`.
+
+The OpenType `OS/2.fsType` value is `0x0008` (Editable embedding). This records the
+font's embedding metadata and does not replace the license description or establish
+application/SDK redistribution rights. Preserve these notices and determine the
+applicable font distribution rights when distributing an application or SDK that
+embeds this asset. The upstream repository's MIT license must not be represented as
+an independent MIT license for this Microsoft font.
+
+## BubbleBox reference geometry and page
+
+The BubbleBox geometry, source defaults, labels and page layout are derived from
+the same fixed `zhuzichu520/FluentUI` MIT-licensed reference. Original QML files,
+license and exact source hashes are retained under `examples/resources/bubblebox`.
+The application draws native Direct2D geometry and does not execute these QML files.
+
+## HarfBuzz 11.2.1
+
+Private static text shaping for Watermark. Official source: https://github.com/harfbuzz/harfbuzz, commit `33a3f8de60dcad7535f14f07d6710144548853ac`. Qt is not linked. The following upstream notice is retained unchanged.
+
+HarfBuzz is licensed under the so-called "Old MIT" license.  Details follow.
+For parts of HarfBuzz that are licensed under different licenses see individual
+files names COPYING in subdirectories where applicable.
+
+Copyright © 2010-2022  Google, Inc.
+Copyright © 2015-2020  Ebrahim Byagowi
+Copyright © 2019,2020  Facebook, Inc.
+Copyright © 2012,2015  Mozilla Foundation
+Copyright © 2011  Codethink Limited
+Copyright © 2008,2010  Nokia Corporation and/or its subsidiary(-ies)
+Copyright © 2009  Keith Stribley
+Copyright © 2011  Martin Hosken and SIL International
+Copyright © 2007  Chris Wilson
+Copyright © 2005,2006,2020,2021,2022,2023  Behdad Esfahbod
+Copyright © 2004,2007,2008,2009,2010,2013,2021,2022,2023  Red Hat, Inc.
+Copyright © 1998-2005  David Turner and Werner Lemberg
+Copyright © 2016  Igalia S.L.
+Copyright © 2022  Matthias Clasen
+Copyright © 2018,2021  Khaled Hosny
+Copyright © 2018,2019,2020  Adobe, Inc
+Copyright © 2013-2015  Alexei Podtelezhnikov
+
+For full copyright notices consult the individual files in the package.
+
+
+Permission is hereby granted, without written agreement and without
+license or royalty fees, to use, copy, modify, and distribute this
+software and its documentation for any purpose, provided that the
+above copyright notice and the following two paragraphs appear in
+all copies of this software.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE TO ANY PARTY FOR
+DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES
+ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN
+IF THE COPYRIGHT HOLDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+THE COPYRIGHT HOLDER SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
+ON AN "AS IS" BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO
+PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+# Chart.js line-chart algorithms
+
+The native single-series LineChart uses the nice-tick and distance-weighted
+cubic-control-point algorithms from Chart.js v2.9.4, as shipped in the fixed
+FluentUI reference. Chart.js is not linked or executed by the native SDK.
+
+Copyright (c) 2020 Chart.js Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+# QR Code generator
+
+The SDK links the C++ QR Code generator at commit
+`3c6d0b3cefb4e049dc337e82237c9644399716a8`. Its implementation is an independent
+static-library object; no Qt or libqrencode is linked into the native SDK.
+
+QR Code generator library (C++)
+
+Copyright (c) Project Nayuki. (MIT License)
+https://www.nayuki.io/page/qr-code-generator-library
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+- The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+- The Software is provided "as is", without warranty of any kind, express or
+  implied, including but not limited to the warranties of merchantability,
+  fitness for a particular purpose and noninfringement. In no event shall the
+  authors or copyright holders be liable for any claim, damages or other
+  liability, whether in an action of contract, tort or otherwise, arising from,
+  out of or in connection with the Software or the use or other dealings in the
+  Software.
+
+## QuickJS-NG 0.16.2
+
+The optional Pinyin SDK embeds QuickJS-NG statically. Only its core engine is compiled; the command-line tools and OS/filesystem modules are not included.
+
+The MIT License (MIT)
+ 
+Copyright (c) 2017-2026 Fabrice Bellard
+Copyright (c) 2017-2024 Charlie Gordon
+Copyright (c) 2023-2026 Ben Noordhuis
+Copyright (c) 2023-2026 Saúl Ibarra Corretgé
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+## pinyin-pro 3.27.0, FluentUI modification
+
+The Pinyin SDK embeds the algorithms and dictionaries from the fixed FluentUI
+reference. The original module is retained intact; its generated payload fixes
+the PatternsBuilder cursor when the chunk size changes between steps. Source
+versions, hashes and this localized correction are recorded in
+third_party/pinyin-pro-fluentui and tools/pinyin.
+
+/*
+ * pinyin-pro 3.27.0
+ * https://github.com/zh-lx/pinyin-pro
+ * 
+ * Copyright (c) 2022-present zh-lx
+ * Licensed under the MIT License
+ * 
+ * Modifications Copyright (c) 2025 Polaris-Night
+ * 
+ * Changes:
+ * - Refactored AC-Tree construction pattern by introducing PatternsBuilder
+ *   to enable delayed/asynchronous building with improved performance control
+ * - Added PinyinCache class to enable caching of pinyin data with asynchronous
+ *   chunked building capability for better performance with large datasets
+ * 
+ * This modified work is also licensed under the MIT License.
+ */
+
+MIT License
+
+Copyright (c) 2022-present zh-lx
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+

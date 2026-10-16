@@ -1,0 +1,6 @@
+/build/
+/package/
+/artifacts/
+.vs/
+*.user
+KeyBoard.log
